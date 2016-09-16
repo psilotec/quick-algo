@@ -4,20 +4,21 @@
 import React, { Component } from 'react';
 
 class Header extends Component {
+
     render() {
         return (
-            <div class="ui secondary pointing menu">
-                <a class="item">
-                    Home
+            <div className="ui secondary pointing menu">
+                <a className="item">
+                    Menu
                 </a>
-                <a class="item">
-                    Messages
+                <a className="item">
+                    New Algo
                 </a>
-                <a class="item active">
-                    Friends
+                <a className="item">
+                    Algo List
                 </a>
-                <div class="right menu">
-                    <a class="ui item">
+                <div className="right menu">
+                    <a className="ui item">
                         Logout
                     </a>
                 </div>
@@ -25,5 +26,7 @@ class Header extends Component {
         );
     }
 }
+
+
 
 export default Header;
