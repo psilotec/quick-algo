@@ -3,6 +3,8 @@
  */
 import React, { Component } from 'react';
 
+import Accounts from './accounts';
+
 class Header extends Component {
 
     render() {
@@ -19,7 +21,7 @@ class Header extends Component {
                 </a>
                 <div className="right menu">
                     <a className="ui item">
-                        Logout
+                        <Accounts />
                     </a>
                 </div>
             </div>
