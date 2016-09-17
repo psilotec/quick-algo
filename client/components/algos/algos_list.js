@@ -6,10 +6,22 @@ import { createContainer } from 'meteor/react-meteor-data';
 import { Algos } from '../../../imports/collections/algos';
 
 class AlgosList extends Component {
+    renderList() {
+        return this.props.algos.map(algo => {
+            return (
+                <div className="item" key={algo._id}>
+                    Algo {algo._id}
+                </div>
+            );
+        });
+    }
+
     render() {
         console.log(this.props.algos);
         return (
-            <div>Algos List</div>
+            <div className="ui middle aligned divided list">
+                {this.renderList()}
+            </div>
         );
     }
 }
