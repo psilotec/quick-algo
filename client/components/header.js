@@ -17,13 +17,8 @@ class Header extends Component {
                     New Algo
                 </a>
                 <a className="item">
-                    Algo List
+                    <Accounts />
                 </a>
-                <div className="right menu">
-                    <a className="ui item">
-                        <Accounts />
-                    </a>
-                </div>
             </div>
         );
     }
