@@ -6,11 +6,22 @@ import { createContainer } from 'meteor/react-meteor-data';
 import { Algos } from '../../../imports/collections/algos';
 
 class AlgosList extends Component {
+    onAlgoRemove(algo) {
+        Meteor.call('algos.remove', algo);
+    }
+
     renderList() {
         return this.props.algos.map(algo => {
             return (
                 <div className="item" key={algo._id}>
                     Algo {algo._id}
+                    <div className="right floated content">
+                        <div
+                            className="ui red button"
+                            onClick={() => this.onAlgoRemove(algo)}>
+                            Remove
+                        </div>
+                    </div>
                 </div>
             );
         });

@@ -11,6 +11,10 @@ Meteor.methods({
             sharedWith: [],
             ownerId: this.userId
         });
+    },
+
+    'algos.remove': function(algo) {
+        return Algos.remove(algo);
     }
 });
 
