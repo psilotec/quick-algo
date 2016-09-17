@@ -6,6 +6,11 @@ import React, { Component } from 'react';
 import Accounts from './accounts';
 
 class Header extends Component {
+    onAlgoClick(event) {
+        event.preventDefault();
+
+        Meteor.call('algos.insert');
+    }
 
     render() {
         return (
@@ -13,7 +18,7 @@ class Header extends Component {
                 <a className="item">
                     Menu
                 </a>
-                <a className="item">
+                <a className="item" href="#" onClick={this.onAlgoClick.bind(this)}>
                     New Algo
                 </a>
                 <a className="item">
