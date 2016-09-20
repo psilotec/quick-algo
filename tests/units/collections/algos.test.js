@@ -24,8 +24,8 @@ describe("Algos collection", function() {
 
     it("creates a createdAt document when New Algo button is clicked", function() {
         const expected = !null;
-    exampleInsert(expected);
-    td.verify(Algos.insert({ createdAt: expected }));
+        exampleInsert(expected);
+        td.verify(Algos.insert({ createdAt: expected }));
     });
 
     it("creates a content document that returns an empty string when New Algo button is clicked", function() {
