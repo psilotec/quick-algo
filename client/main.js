@@ -14,7 +14,7 @@ const routes = (
     <Router history={browserHistory}>
         <Route path="/" component={App}>
             <IndexRoute component={AlgosList} />
-            <Route path="algos" component={AlgosMain} />
+            <Route path="algos/:algoId" component={AlgosMain} />
         </Route>
     </Router>
 );
