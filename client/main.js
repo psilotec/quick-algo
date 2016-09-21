@@ -13,6 +13,7 @@ import { Algos } from '../imports/collections/algos';
 const routes = (
     <Router history={browserHistory}>
         <Route path="/" component={App}>
+            <IndexRoute component={AlgosList} />
             <Route path="algos" component={AlgosMain} />
         </Route>
     </Router>
