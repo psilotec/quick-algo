@@ -5,11 +5,11 @@ import React from 'react';
 import Header from './header';
 import AlgosList from './algos/algos_list';
 
-export default () => {
+export default (props) => {
     return (
         <div>
             <Header />
-            <AlgosList />
+            {props.children}
         </div>
     );
 };

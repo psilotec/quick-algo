@@ -6,11 +6,14 @@ import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
 import App from './components/app';
+import AlgosMain from './components/algos/algos_main';
+import AlgosList from './components/algos/algos_list';
 import { Algos } from '../imports/collections/algos';
 
 const routes = (
     <Router history={browserHistory}>
         <Route path="/" component={App}>
+            <Route path="algos" component={AlgosMain} />
         </Route>
     </Router>
 );
