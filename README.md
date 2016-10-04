@@ -3,7 +3,7 @@ A web app for creating/organizing algorithms and tests quickly.
 
 
 ## Functions:
-------
+-
 Autosave of tech used so user can select tech stacks later
 Checkbox/Highlighting for core functions
 Component hierarchy planning with color coordination
@@ -26,39 +26,36 @@ Post each component's route name (url ending) at the top of its card so that it 
 Component page that translates from the component hierarchy that you set up (below - with tabbed pattern and arrows) and puts into a grouping component that is either a series of flexboxes within flexboxs or panels with horizontal flexbox styling inside to emulate: https://www.udemy.com/meteor-react-tutorial/learn/v4/t/lecture/5174164 @ :42)
 
 ## Features:
-------
+-
 Landing Page: Explanation of why it's important to use TDD/an algorithm (when you start with a solid foundation, everything just falls into place) and quick start button - 'Create new algo' with signup after your algo is complete
 Main Menu: see all your algos, create new algo, see your tests 
 3 pages - enter general info and funxtions, component hierarchy, component test info entering page,
 
 ## Aesthetic:
-------
+-
 Light background with colorful buttons
 Color accents to come from whatever belt area you're in
 HD picture landing page/login screen with 1px blur glass look
 https://www.coachstudio.net/
 
 ## Styling:
-------
+-
 Semantic UI
 SCSS
 Flexbox
 
 ## Mockup:
-------
+-
 
 
 ## Collections:
-------
+-
 Algos
-     Add document in collection button
-     select document type dropdown
-     add methods to each collection
-
 Tests
+Settings
 
 ## Component Hierarchy:
-------
+-
 
 App
 Header
@@ -68,7 +65,6 @@ Header
 Container
     
      Landing Page
-    
      MainMenu
 
 NewAlgo
