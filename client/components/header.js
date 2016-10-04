@@ -19,7 +19,7 @@ class Header extends Component {
                     Quick Algo
                 </Link>
                 <a className="item" href="#" onClick={this.onAlgoClick.bind(this)}>
-                    New Algo
+                    Create New
                 </a>
                 <a className="item">
                     <Accounts />
